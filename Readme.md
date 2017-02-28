@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Иванцева](https://up.htmlacademy.ru/adaptive/10/user/188118).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
