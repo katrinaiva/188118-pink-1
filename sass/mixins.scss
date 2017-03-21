@@ -1,0 +1,33 @@
+@mixin link() {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin form {
+  font-size: $font-size--small;
+  text-transform: $text-transform;
+  color: $color-secondary;
+}
+
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-widths){
+    width: 940px;
+    padding: 0 10px;
+  }
+}
