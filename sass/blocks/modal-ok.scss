@@ -1,0 +1,119 @@
+.modal-ok {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 320px;
+  height: 380px;
+  background-color: $color-link;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal-ok__show {
+  display: block;
+}
+
+.modal-ok__text {
+  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: $font-size--small;
+  line-height: $font-size--big;
+  font-weight: normal;
+  color: $color-main;
+  text-align: center;
+  }
+
+.modal-ok__btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 48px;
+  padding-bottom: 53px;
+  background-color: $gray-light;
+  :hover {
+    background-color: #1c9b5e;
+  }
+  :active {
+    color: $color-link--down;
+  }
+  :disabled {
+    background-color: $gray-input;
+  }
+}
+
+.modal-ok__content {
+  background-color: $color-link;
+}
+
+.modal-ok__title {
+  padding-top: 42px;
+  padding-bottom: 10px;
+  font-size: $font-size;
+  line-height: $font-size--big;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+
+@media (min-width: $tablet-widths) {
+  .modal-ok {
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  }
+
+  .modal-ok__title {
+    @include reset;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-ok__text {
+    @include reset;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 39px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .modal-ok__btn {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+//
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .modal-ok {
+    width: 460px;
+    height: 432px;
+    margin-left: -230px;
+  }
+}
+//
+@media (min-width: $desktop-widths){
+  .modal-ok {
+    width: 782px;
+    height: 380px;
+    margin-left: -391px;
+  }
+
+  .modal-ok__btn {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  .modal-ok__text {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .modal-ok__title {
+    padding-top: 45px;
+  }
+
+}

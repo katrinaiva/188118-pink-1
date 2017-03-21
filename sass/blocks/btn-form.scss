@@ -1,0 +1,30 @@
+.btn-form {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 62px;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  background-color: $btn-form;
+  font-weight: bold;
+  color: $color-link;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .btn-form {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .btn-form {
+    width: 300px;
+    &--big {
+      width: 460px;
+    }
+  }
+}
