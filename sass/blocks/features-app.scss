@@ -1,0 +1,232 @@
+.features-app__fon {
+  background: $gray-light;
+  position: relative;
+
+}
+
+.features-app__wrapper {
+  @include container();
+  background: url(/img/bg-triangle-white.svg) no-repeat -832px 0;
+}
+
+.features-app__texts {
+  @include container();
+//  outline: 2px solid red;
+  background: $color-link;
+  color: $color-main;
+}
+
+.features-app__text {
+  margin: 0;
+  padding: 5px 58px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.features-app__text:first-child {
+  padding-top: 42px;
+}
+
+.features-app__text:last-child {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.features-app__lists {
+  @include reset;
+  list-style: none;
+  padding-top: 83px;
+  padding-bottom: -9px;
+  text-align: center;
+}
+
+.features-app__imgs {
+  text-align: center;
+}
+
+.features-app__img {
+  position: relative;
+//  top: 37px;
+//  margin-bottom: -9px;
+  &--hidden {
+    display: none;
+  }
+}
+
+.features-app__list-title {
+  @include reset;
+  padding-bottom: 12px;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.features-app__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  &:last-child {
+    padding-bottom: 4px;
+  }
+  p {
+    @include reset;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $tablet-widths) {
+  .features-app__img {
+    top: 37px;
+
+    img {
+      width: 158px;
+      margin-bottom: -18px;
+    }
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .features-app__list {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 38px;
+  }
+  .features-app__text {
+    padding: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .features-app__text:first-child {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .features-app__text:last-child {
+    padding-top: 0px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 40px;
+  }
+
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+    .features-app__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: url(/img/bg-triangle-white.svg) no-repeat -420px 0;
+  }
+
+  .features-app__lists {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    text-align: left;
+  }
+
+
+
+  .features-app__img {
+    top: 10px;
+    &img {
+      width: 268px;
+      height: 480px;
+      margin-bottom: -9px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .features-app__fon {
+    margin-top: 36px;
+  }
+
+  .features-app__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: url(/img/bg-triangle-white.svg) no-repeat -220px 0;
+  }
+
+  .features-app__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+
+  }
+
+  .features-app__imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: -1;
+    width: 940px;
+    margin-bottom: 45px;
+    margin-top: 25px;
+  }
+
+  .features-app__list-title {
+    padding-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    }
+
+    .features-app__list:first-child .features-app__list-title {
+//      padding-left: 0px;
+    padding-right: 13px;
+    }
+
+  .features-app__list:last-child .features-app__list-title {
+      padding-left: 11px;
+    }
+
+  .features-app__list:first-child p {
+    padding-right: 11px;
+  }
+
+   .features-app__list:last-child p {
+      padding-left: 13px;
+    }
+
+  .features-app__list {
+    width: 249px;
+    padding: 0;
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .features-app__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .features-app__text:first-child {
+    padding-top: 68px;
+  }
+
+  .features-app__text:last-child {
+    padding-bottom: 50px;
+  }
+
+  .features-app__img {
+    img {
+      height: 302px;
+      width: 292px;
+      margin-left: 5px;
+      margin-top: -36px;
+    }
+
+  &--hidden {
+    display: block;
+    }
+  }
+}

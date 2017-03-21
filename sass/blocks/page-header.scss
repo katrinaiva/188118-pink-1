@@ -1,0 +1,62 @@
+.page-header {
+//  background-color: $color-main;
+  width: 320px;
+  margin: 0 auto;
+
+//  с другого кода
+  position: relative;
+  margin-bottom: -66px;
+  width: 100%;
+//  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+}
+//
+//.page-header__title {
+//  margin: 0;
+//  padding: 0;
+//  padding-left: 45px;
+//  padding-right: 45px;
+//  padding-top: 36px;
+//  padding-bottom: 75px;
+//  font-size: $font-size--big;
+//  font-weight: 300;
+//  color: $color-link;
+//  text-align: center;
+//}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .page-header {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-widths){
+  .page-header {
+    margin-bottom: -110px;
+  }
+//  .page-header__title {
+//    padding: 78px 75px;
+//    font-size: 50px;
+//    line-height: 60px;
+//    &--large {
+//      padding-bottom: 145px;
+//    }
+//  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-header {
+    width: 960px;
+  }
+
+//  .page-header__title {
+//    &--large {
+//      padding-top: 70px;
+//      padding-bottom: 145px;
+//      padding-left: 290px;
+//      padding-right: 290px;
+//    }
+//  }
+}

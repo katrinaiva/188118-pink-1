@@ -1,0 +1,122 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+//  @include container();
+}
+
+.forms__text {
+  display: block;
+  align-self: center;
+  @include reset;
+  margin-bottom: 69px;
+  padding-top: 95px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  .visually-hidden {
+    display: inline-block;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: $tablet-widths) {
+  .forms__text {
+    width: 280px;
+    font-size: 14px;
+    padding: 40px 0;
+    margin-bottom: 0;
+
+    .visually-hidden {
+    display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .forms__text {
+    width: 505px;
+  }
+}
+
+@media (min-width: $desktop-widths){
+  .forms__text {
+    width: 760px;
+  }
+}
+
+.forms__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 102px;
+  padding-bottom: 75px;
+  font-size: $font-size--big;
+  font-weight: 300;
+  color: $color-link;
+  text-align: center;
+}
+
+.forms__title-wrapper {
+  position: relative;
+}
+
+@media (max-width: $tablet-widths) {
+  .forms__title-wrapper {
+    background: $color-main url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+  }
+  @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx){
+    .forms__title-wrapper {
+      background-image: url(../img/bg-back-mobile@2x.jpg);
+      background-size: auto 461px;
+    }
+}
+}
+
+@media (min-width: $tablet-widths){
+  .forms__title {
+    padding: 0 75px;
+    padding-top: 183px;
+    padding-bottom: 78px;
+    font-size: 50px;
+    line-height: 60px;
+    &--large {
+      padding-bottom: 145px;
+    }
+  }
+
+    .forms__title-wrapper  {
+    background: $color-main url(../img/bg-back-tablet@1x.jpg) 50% 0 no-repeat;
+  }
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx){
+      .forms__title-wrapper  {
+        background-image: url(../img/bg-back-tablet@2x.jpg);
+        background-size: auto 729px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .forms__title {
+    &--large {
+      padding-top: 185px;
+      padding-bottom: 145px;
+      padding-left: 290px;
+      padding-right: 290px;
+    }
+  }
+
+  .forms__title-wrapper {
+    background: $color-main url(../img/bg-back-desktop@1x.jpg) 50% 0 no-repeat;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .forms__title-wrapper {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: auto 856px;
+      }
+    }
+}

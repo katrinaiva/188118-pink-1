@@ -1,0 +1,190 @@
+.rates {
+  padding-bottom: 48px;
+  background-color: $gray-light;
+
+}
+
+.rates__fon {
+  @include container();
+}
+
+.rates-table__value {
+  padding: 18px;
+  background: $color-main;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  border: 2px solid #e5e5e5;
+
+  span {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+}
+
+
+
+.rates-table__field {
+//  width: 280px;
+  padding: 15px;
+  padding-left: 22px;
+  color: $color-main;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $color-link;
+  border: 2px solid $gray-input;
+  &--yes {
+    background-image: url(/img/icon-yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--no {
+    background-image: url(/img/icon-no.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.rates-table {
+  margin-bottom: 42px;
+  border-collapse: collapse;
+}
+
+.rates-table__value-hit {
+  position: relative;
+  background: $color-main url(../img/bg-hit.svg) no-repeat;
+  &::before{
+    content: "Хит";
+    position: absolute;
+    top: 11px;
+    left: 7px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-link;
+    transform: rotateZ(-45deg);
+  }
+}
+
+@media (max-width: $tablet-widths){
+  .rates-table {
+    margin-top: 103px;
+    width: 1112px;
+    margin-left: -533px;
+//    overflow: hidden;
+  }
+
+  .rates__fon {
+    background: url(/img/bg-triangle-white.svg) no-repeat -730px 0;
+}
+
+
+//  .rates-table--hidden {
+//    display: none;
+//  }
+
+  .rates-table__field {
+    &--yes {
+    background-position: 98% 60%;
+  }
+    &--no {
+    background-position: 92%;
+  }
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .rates-table__value:first-child {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .rates-table__field:not(:first-child) {
+    font-size: 0;
+  }
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .rates {
+  padding-bottom: 67px;
+}
+
+  .rates__fon {
+    padding-top: 50px;
+    background: url(/img/bg-triangle-white.svg) no-repeat -540px 0;
+  }
+
+  .rates-table {
+    margin-top: 28px;
+    margin-bottom: 0;
+    width: 620px;
+  }
+
+  .rates-table__field {
+    width: 153px;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    vertical-align: middle;
+//    text-align: center;
+  }
+
+  .rates__toggles-wrapper {
+    display: none;
+  }
+
+  .rates-table__value {
+    padding-top: 13px;
+    padding-bottom: 7px;
+    font-size: 16px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .rates-table__value-hit {
+  background: $color-main url(../img/bg-hit-tablet.svg) no-repeat;
+  &::before{
+    top: 5px;
+    left: 5px;
+  }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .rates {
+  padding-bottom: 52px;
+}
+
+  .rates__fon {
+    padding-top: 50px;
+    background: url(/img/bg-triangle-white.svg) no-repeat -136px 0;
+  }
+
+  .rates-table {
+    margin-top: 98px;
+    width: 940px;
+  }
+
+  .rates-table__field {
+    width: 234px;
+    text-transform: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    font-size: 18px;
+    vertical-align: middle;
+//    text-align: center;
+  }
+
+  .rates__toggles-wrapper {
+    display: none;
+  }
+}

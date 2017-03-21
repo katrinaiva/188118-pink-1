@@ -1,0 +1,138 @@
+.reviews {
+  @include container();
+}
+
+.reviews__wrapper {
+  position: relative;
+  padding-bottom: 30px;
+  background: $color-link;
+}
+
+.reviews__auhor-name {
+  color: #000000;
+  font-size: $font-size;
+  font-style: normal;
+  line-height: $line-height;
+  font-weight: bold;
+}
+
+.reviews__lists {
+  text-align: center;
+}
+
+.reviews__text {
+  margin: 0;
+  padding-bottom: 33px;
+  font-size: $font-size--small;
+  line-height: $line-height;
+  color: $color-main;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.reviews-buttons {
+  display: none;
+}
+
+@media (max-width: $tablet-widths){
+  .reviews-footer {
+    order: -2;
+  }
+
+  .reviews__auhor-age {
+  display: none;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .reviews-footer {
+    margin-bottom: 22px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+
+  .reviews__list {
+  padding-top: 90px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+  .reviews__auhor-age {
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+  .reviews__auhor-name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-widths){
+  .reviews {
+    min-height: 416px;
+  }
+
+  .reviews__wrapper {
+    padding: 0;
+  }
+  .reviews__list {
+    padding-top: 188px;
+    background: url(/img/icon-quotes.svg) no-repeat center 72px;
+  }
+
+  .reviews__auhor-age {
+    font-size: 18px;
+  }
+
+  .reviews__auhor-name {
+    font-size: 24px;
+  }
+
+  .reviews__text {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .reviews__prev, .reviews__next {
+    position: absolute;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .reviews__prev{
+    left: 0;
+    top: 214px;
+  }
+
+  .reviews__next{
+    right: 0;
+    top: 214px;
+  }
+
+  .reviews__icon {
+    fill: #bec2c7;
+    &:hover {
+      fill: #7e868f;
+    }
+    &:active {
+      fill: #bec2c7;
+    }
+  }
+  .reviews-buttons {
+    display: block;
+
+  }
+}
