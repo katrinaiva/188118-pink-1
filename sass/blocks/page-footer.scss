@@ -63,7 +63,7 @@
   &--hidden {
     display: none;
   }
-  @include container();
+   @include container();
     display: block;
     display: flex;
     flex-direction: column;
@@ -71,6 +71,10 @@
     margin: 27px 0;
 }
 
+
+.inner .page-footer__wrapper {
+  margin: 41px 0;
+}
 
 .page-footer__logo-htmlacademy {
   vertical-align: middle;
@@ -218,7 +222,7 @@
 //    fill: $color-main;
 //  }
 
-  .page-footer__logo-desktop:active path {
+   .page-footer__logo-desktop:active path {
       opacity: 0.3;
   }
 

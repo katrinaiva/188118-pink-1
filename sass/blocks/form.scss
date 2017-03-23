@@ -4,9 +4,17 @@
   @include container();
 }
 
+.form__wrapper {
+  background-color: $gray-light;
+  border-top: 1px solid $gray-light;
+  &--position {
+    order: -2;
+  }
+}
+
 .form__fieldset {
   @include reset;
-  margin-bottom: 54px;
+  margin-bottom: 27px;
   border: 2px solid $gray-input;
 }
 
@@ -16,13 +24,14 @@
 }
 
 .form__information-label {
-  padding-left: 20px;
+  padding-left: 23px;
 }
 
 .form__information-input, .form__info-input {
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 17px;
   padding: 15px 22px;
-  font-size: $font-size;
+  font-size: 18px;
   font-family: Open Sans, Arial, sans-serif;
   line-height: $line-height;
   color: $color-main;
@@ -45,13 +54,16 @@
   }
 }
 
+//.form__app {
+//  order: -2;
+////  &--position {
+////    order: -2;
+////  }
+//}
 
-.form__app {
-  order: -2;
-//  &--position {
-//    order: -2;
-//  }
-}
+//.form__wrapper--position {
+//  order: -2;
+//}
 
 .form__info {
   order: -3;
@@ -89,15 +101,15 @@
   padding-left: 30px;
   padding-right: 30px;
   line-height: $line-height;
-//  text-align: center;
+  text-align: center;
   margin: 0 auto;
 }
 
 .form__textarea {
   width: 280px;
-  height: 154px;
+  height: 200px;
   box-sizing: border-box;
-  padding: 23px 20px;
+  padding: 15px 20px;
   font-family: Open Sans, Arial, sans-serif;
   font-size: $font-size;
   line-height: $line-height;
@@ -108,6 +120,7 @@
 }
 
 .form__p {
+  margin-top: 35px;
   text-transform: $text-transform;
   font-size: $font-size--small;
   line-height: $line-height;
@@ -128,8 +141,8 @@
     position: relative;
     display: block;
     padding-left: 70px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 42px;
+    padding-bottom: 10px;
     font-size: $font-size;
     line-height: $line-height;
     color: $color-main;
@@ -142,8 +155,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10;
-      left: 0;
+      top: 39px;
+      left: 2px;
       width: 35px;
       height: 35px;
       background: $color-link;
@@ -156,8 +169,8 @@
     position: relative;
     display: block;
     padding-left: 70px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 40px;
+    padding-bottom: 5px;
     font-size: $font-size;
     line-height: $line-height;
     color: $color-main;
@@ -170,8 +183,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10;
-      left: 0;
+      top: 37px;
+      left: 2px;
       width: 35px;
       height: 35px;
       background: $color-link;
@@ -180,7 +193,6 @@
     }
   }
 }
-
 
 .form__crazy-input {
   &:checked {
@@ -275,7 +287,6 @@
 //  height: 310px;
   }
 
-
   .form__info-content {
     display: flex;
     flex-direction: row;
@@ -288,14 +299,11 @@
   flex-direction: column;
 }
 
-
 .form__recall--wrapper {
   display: flex;
   justify-content: center;
   padding: 51px 59px;
-//    margin: auto;
 }
-
 
 @media (max-width: $tablet-widths){
 
@@ -305,9 +313,9 @@
   }
 
   .form__crazy, .form__app {
-    background-color: $gray-light;
-    border-top: 1px solid $gray-light;
-    margin-bottom: 10px;
+//    background-color: $gray-light;
+//    border-top: 1px solid $gray-light;
+    margin-bottom: 36px;
     order: 0;
   }
   .form__info {
@@ -317,21 +325,22 @@
 
   .form__information {
     order: 0;
+    margin-top: 32px;
   }
 
   .form__recall {
     order: 0;
+    margin-bottom: 39px;
   }
 
   .form__app {
     order: 0;
+    margin-bottom: 42px;
   }
 
   .form__information-input, .form__info-input {
     width: 280px;
   }
-
-
 
   .form__footer {
     flex-direction: column;
@@ -349,10 +358,11 @@
   .form__recall--wrapper {
     display: block;
     padding: 0;
+    padding-top: 15px;
   }
 
   .form__crazy-title, .form__recall-title, .form__app-title {
-  padding-top: 30px;
+  padding-top: 38px;
   line-height: $font-size;
 }
 
@@ -363,7 +373,7 @@
 }
 
   .form__info-label {
-    padding-left: 20px;
+    padding-left: 23px;
 }
 }
 

@@ -1,4 +1,5 @@
 .loading-photo {
+//  @include container();
   outline: 2px solid red;
   background-color: $gray-light;
   border-top: 1px solid $gray-light;
@@ -46,6 +47,7 @@
 //    }
 //  }
 
+
 .loading-photo__controls {
   position: relative;
   &--hidden {
@@ -85,6 +87,7 @@
   font-weight: bold;
   background-color: $gray-light;
   outline: none;
+
 
   &-submit {
     border: 3px solid $color-secondary;
@@ -156,6 +159,7 @@
     width: 260px;
     padding: 15px 0;
   }
+
 
   .loading-photo__result {
     margin: 0;

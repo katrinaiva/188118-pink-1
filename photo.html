@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-<!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js"></script>
@@ -32,6 +32,13 @@
       <nav class="main-menu main-menu--opened main-menu--nojs" >
         <div class="main-menu__top">
           <a href="index.html" title="Переход на главную">
+<!--
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="73" height="22" alt="Pink" class="main-menu__logo">
+            </picture>
+-->
             <svg class="main-menu__logo-tablet" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g >
                 <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
@@ -169,7 +176,7 @@
             <blockquote class="photos__list">
               <div class="photos__auhor-foto">
                 <a href="img/photo-3-mobile@1x.jpg">
-                  <picture>
+                   <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                     <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="" class="photos__img">
@@ -189,7 +196,7 @@
             <blockquote class="photos__list">
               <div class="photos__auhor-foto">
                 <a href="img/photo-4-mobile@1x.jpg">
-                  <picture>
+                   <picture>
                     <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
                     <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="" class="photos__img">
@@ -255,10 +262,10 @@
         <form  class="loading-photo" action="/echo" method=get>
           <div class="loading-photo__result">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-7-mobile@1x.jpg 1x, img/photo-7-mobile@2x.jpg 2x">
-                <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="">
-            </picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-7-mobile@1x.jpg 1x, img/photo-7-mobile@2x.jpg 2x">
+                    <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="">
+                  </picture>
           </div>
           <div class="loading-photo-wrapper">
             <div class="loading-photo__filter">
@@ -366,7 +373,14 @@
     <script>
     var mainmenu = document.querySelector('.main-menu');
     var menuToggle = document.querySelector('.main-menu__toggle');
+
     mainmenu.classList.remove('main-menu--nojs');
+
+//    if (mainmenu.hasAttribute('main-menu--opened')){
+//      mainmenu.classList.add('main-menu--closed');
+//      mainmenu.classList.remove('main-menu--opened');
+//    }
+
     menuToggle.addEventListener('click', function() {
       if (mainmenu.classList.contains('main-menu--opened')) {
         mainmenu.classList.add('main-menu--closed');
