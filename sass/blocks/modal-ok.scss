@@ -30,7 +30,7 @@
   padding-top: 48px;
   padding-bottom: 53px;
   background-color: $gray-light;
-   :hover {
+  :hover {
     background-color: #1c9b5e;
   }
   :active {
@@ -87,7 +87,7 @@
     padding-right: 80px;
   }
 }
-//
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .modal-ok {
     width: 460px;
@@ -95,7 +95,7 @@
     margin-left: -230px;
   }
 }
-//
+
 @media (min-width: $desktop-widths){
   .modal-ok {
     width: 782px;
@@ -115,5 +115,4 @@
   .modal-ok__title {
     padding-top: 45px;
   }
-
 }

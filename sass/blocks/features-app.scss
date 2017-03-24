@@ -1,7 +1,6 @@
 .features-app__fon {
   background: $gray-light;
   position: relative;
-
 }
 
 .features-app__wrapper {
@@ -11,7 +10,6 @@
 
 .features-app__texts {
   @include container();
-//  outline: 2px solid red;
   background: $color-link;
   color: $color-main;
 }
@@ -48,8 +46,6 @@
 
 .features-app__img {
   position: relative;
-//  top: 37px;
-//  margin-bottom: -9px;
   &--hidden {
     display: none;
   }
@@ -112,7 +108,6 @@
     padding-right: 130px;
     padding-bottom: 40px;
   }
-
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -129,8 +124,6 @@
     width: 310px;
     text-align: left;
   }
-
-
 
   .features-app__img {
     top: 10px;
@@ -158,7 +151,6 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
-
   }
 
   .features-app__imgs {
@@ -179,7 +171,6 @@
     }
 
     .features-app__list:first-child .features-app__list-title {
-//      padding-left: 0px;
     padding-right: 13px;
     }
 
@@ -191,7 +182,7 @@
     padding-right: 11px;
   }
 
-   .features-app__list:last-child p {
+  .features-app__list:last-child p {
       padding-left: 13px;
     }
 
