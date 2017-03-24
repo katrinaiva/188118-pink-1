@@ -1,7 +1,6 @@
 .forms {
   display: flex;
   flex-direction: column;
-//  @include container();
 }
 
 .forms__text {
@@ -35,6 +34,10 @@
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .forms {
+    margin-bottom: 26px;
+  }
+
   .forms__text {
     width: 505px;
   }

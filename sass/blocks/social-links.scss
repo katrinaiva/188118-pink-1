@@ -38,6 +38,14 @@
   margin-right: 5px;
 }
 
+
+@media (max-width: $tablet-widths){
+  .social-links {
+    margin-top: 21px;
+    margin-left: 15px;
+  }
+}
+
 @media (min-width: $desktop-widths){
   .social-links {
     margin: 0;

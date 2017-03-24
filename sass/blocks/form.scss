@@ -4,13 +4,6 @@
   @include container();
 }
 
-.form__wrapper {
-  background-color: $gray-light;
-  border-top: 1px solid $gray-light;
-  &--position {
-    order: -2;
-  }
-}
 
 .form__fieldset {
   @include reset;
@@ -54,28 +47,21 @@
   }
 }
 
-//.form__app {
-//  order: -2;
-////  &--position {
-////    order: -2;
-////  }
-//}
-
-//.form__wrapper--position {
-//  order: -2;
-//}
-
 .form__info {
   order: -3;
   border: none;
 }
 
 .form__information {
-    order: -1;
+  order: -1;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .form__recall {
-    order: 2;
+  order: 2;
+  margin-top: 25px;
+  margin-bottom: 61px;
 }
 
   input, textarea {
@@ -120,7 +106,8 @@
 }
 
 .form__p {
-  margin-top: 35px;
+  margin-top: 26px;
+  margin-bottom: 24px;
   text-transform: $text-transform;
   font-size: $font-size--small;
   line-height: $line-height;
@@ -302,10 +289,16 @@
 .form__recall--wrapper {
   display: flex;
   justify-content: center;
-  padding: 51px 59px;
+  padding: 31px 59px;
+  margin-bottom: 21px;
 }
 
 @media (max-width: $tablet-widths){
+
+  .form__wrapper {
+  background-color: $gray-light;
+  border-top: 1px solid $gray-light;
+  }
 
   .form__fieldset {
     border: none;
@@ -313,23 +306,22 @@
   }
 
   .form__crazy, .form__app {
-//    background-color: $gray-light;
-//    border-top: 1px solid $gray-light;
     margin-bottom: 36px;
     order: 0;
   }
   .form__info {
     order: 0;
-//    align-self: flex-end;
   }
 
   .form__information {
     order: 0;
     margin-top: 32px;
+    margin-bottom: 25px;
   }
 
   .form__recall {
     order: 0;
+    margin: 0;
     margin-bottom: 39px;
   }
 
@@ -358,6 +350,7 @@
   .form__recall--wrapper {
     display: block;
     padding: 0;
+    margin: 0;
     padding-top: 15px;
   }
 
@@ -375,6 +368,11 @@
   .form__info-label {
     padding-left: 23px;
 }
+
+  .form__p {
+    margin-top: 34px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: $tablet-widths) {
@@ -387,7 +385,7 @@
         content: "";
         position: absolute;
         right: 1px;
-        top: 1px;
+        top: 3px;
         width: 60px;
         height: 60px;
         background: $gray-input url(../img/icon-phone.svg) no-repeat 50% 50%;
@@ -396,9 +394,34 @@
 
   .form__information-content:last-child::before {
     background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
-//    top: 2px;
+  }
+
+  .form__selection-input {
+    &+.form__selection-label {
+      padding-top: 43px;
+      padding-bottom: 0;
   }
 }
+
+    .form__crazy-wrapper, .form__app-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0 59px;
+      padding-bottom: 56px;
+      box-sizing: border-box;
+  }
+
+   .form__crazy-wrapper {
+      padding-bottom: 44px;
+  }
+
+  .form__crazy-input {
+  &+.form__crazy-label {
+    padding-left: 60px;
+    }
+  }
+}
+
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .form__information-input {
@@ -407,11 +430,27 @@
     order: 0;
   }
 
-.form__info-input {
-  width: 521px;
-  margin-bottom: 0;
-  &--longer {
-    width: 561px;
+  .form__info-input {
+    width: 525px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    &--longer {
+      width: 565px;
+    }
+  }
+
+  .form__app-input {
+  &+.form__app-label {
+    padding-left: 60px;
+    padding-top: 44px;
+    padding-bottom: 1px;
+  }
+}
+
+  .form__wrapper {
+  &--position {
+    order: -2;
+    margin-top: 25px;
   }
 }
 
@@ -431,7 +470,7 @@
   }
 
   .form__textarea{
-    width: 496px;
+    width: 500px;
     height: 190px;
   }
 
@@ -442,30 +481,22 @@
 
   .form__information-label{
     order: 1;
+    padding-left: 20px;
   }
 
   .form__information-title {
     margin-bottom: 30px;
   }
-}
 
-@media (min-width: 660px) {
-.form__selection-input {
-  &+.form__selection-label {
-    padding-top: 43px;
-    padding-bottom: 0;
+  .form__information-input {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
 }
 }
 
-    .form__crazy-wrapper, .form__app-wrapper {
-      display: flex;
-      flex-direction: column;
-      padding: 0 59px;
-      padding-bottom: 48px;
-      box-sizing: border-box;
 
-  }
-}
+
 
 @media (min-width: $desktop-widths) {
   .form {

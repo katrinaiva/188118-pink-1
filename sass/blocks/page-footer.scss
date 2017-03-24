@@ -34,6 +34,17 @@
 //  line-height: 18px;
 }
 
+.page-footer__text {
+  padding-right: 14px;
+  vertical-align: middle;
+}
+
+@media (max-width: $tablet-widths){
+  .page-footer__copyright {
+    margin-top: 24px;
+  }
+}
+
 .page-footer__map {
   width: 320px;
   height: 219px;
@@ -149,10 +160,10 @@
     justify-content: space-between;
   }
 
-  .page-footer__text {
-    padding-right: 14px;
-    vertical-align: middle;
-  }
+//  .page-footer__text {
+//    padding-right: 14px;
+//    vertical-align: middle;
+//  }
 
   .page-footer__fon {
     width: 660px;
