@@ -79,7 +79,8 @@
 }
 }
 
-@media (min-width: $tablet-widths){
+@media (min-width: $tablet-widths) {
+
   .forms__title {
     padding: 0 75px;
     padding-top: 183px;
@@ -104,6 +105,12 @@
 }
 
 @media (min-width: $desktop-widths) {
+
+  .forms__text {
+  margin-bottom: 75px;
+  padding-top: 93px;
+  }
+
   .forms__title {
     padding-bottom: 102px;
     padding-top: 173px;
