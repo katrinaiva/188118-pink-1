@@ -1,3 +1,8 @@
+.page-footer {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
 .page-footer__title {
   margin-top: 43px;
   color: $color-main;
@@ -133,6 +138,10 @@
     font: 14px;
     line-height: 18px;
   }
+
+  .inner .page-footer__wrapper {
+    margin: 26px 0;
+  }
 }
 
 @media (min-width: $tablet-widths) {
@@ -172,6 +181,10 @@
 }
 
 @media (min-width: $desktop-widths) {
+//  .inner .page-footer {
+//    margin-top: 40px;
+//  }
+
   .page-footer__wrapper {
     margin: 75px 0;
   }
