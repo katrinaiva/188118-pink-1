@@ -4,9 +4,10 @@
   @include container();
 }
 
+
 .form__fieldset {
   @include reset;
-  margin-bottom: 54px;
+  margin-bottom: 27px;
   border: 2px solid $gray-input;
 }
 
@@ -16,13 +17,14 @@
 }
 
 .form__information-label {
-  padding-left: 20px;
+  padding-left: 23px;
 }
 
 .form__information-input, .form__info-input {
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 17px;
   padding: 15px 22px;
-  font-size: $font-size;
+  font-size: 18px;
   font-family: Open Sans, Arial, sans-serif;
   line-height: $line-height;
   color: $color-main;
@@ -45,25 +47,21 @@
   }
 }
 
-
-.form__app {
-  order: -2;
-//  &--position {
-//    order: -2;
-//  }
-}
-
 .form__info {
   order: -3;
   border: none;
 }
 
 .form__information {
-    order: -1;
+  order: -1;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .form__recall {
-    order: 2;
+  order: 2;
+  margin-top: 25px;
+  margin-bottom: 61px;
 }
 
   input, textarea {
@@ -89,15 +87,15 @@
   padding-left: 30px;
   padding-right: 30px;
   line-height: $line-height;
-//  text-align: center;
+  text-align: center;
   margin: 0 auto;
 }
 
 .form__textarea {
   width: 280px;
-  height: 154px;
+  height: 200px;
   box-sizing: border-box;
-  padding: 23px 20px;
+  padding: 15px 20px;
   font-family: Open Sans, Arial, sans-serif;
   font-size: $font-size;
   line-height: $line-height;
@@ -108,6 +106,8 @@
 }
 
 .form__p {
+  margin-top: 26px;
+  margin-bottom: 24px;
   text-transform: $text-transform;
   font-size: $font-size--small;
   line-height: $line-height;
@@ -128,8 +128,8 @@
     position: relative;
     display: block;
     padding-left: 70px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 42px;
+    padding-bottom: 10px;
     font-size: $font-size;
     line-height: $line-height;
     color: $color-main;
@@ -142,8 +142,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10;
-      left: 0;
+      top: 39px;
+      left: 2px;
       width: 35px;
       height: 35px;
       background: $color-link;
@@ -156,8 +156,8 @@
     position: relative;
     display: block;
     padding-left: 70px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 40px;
+    padding-bottom: 5px;
     font-size: $font-size;
     line-height: $line-height;
     color: $color-main;
@@ -170,8 +170,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10;
-      left: 0;
+      top: 37px;
+      left: 2px;
       width: 35px;
       height: 35px;
       background: $color-link;
@@ -180,7 +180,6 @@
     }
   }
 }
-
 
 .form__crazy-input {
   &:checked {
@@ -275,7 +274,6 @@
 //  height: 310px;
   }
 
-
   .form__info-content {
     display: flex;
     flex-direction: row;
@@ -288,50 +286,54 @@
   flex-direction: column;
 }
 
-
 .form__recall--wrapper {
   display: flex;
   justify-content: center;
-  padding: 51px 59px;
-//    margin: auto;
+  padding: 31px 59px;
+  margin-bottom: 21px;
 }
 
-
 @media (max-width: $tablet-widths){
+
+  .form__wrapper {
+  background-color: $gray-light;
+  border-top: 1px solid $gray-light;
+  order: -2
+  }
 
   .form__fieldset {
     border: none;
     padding: 0 20px;
   }
 
-  .form__crazy, .form__app {
-    background-color: $gray-light;
-    border-top: 1px solid $gray-light;
-    margin-bottom: 10px;
-    order: 0;
+  .form__crazy {
+    margin-bottom: 36px;
   }
+
   .form__info {
-    order: 0;
-//    align-self: flex-end;
+    order: -3;
   }
 
   .form__information {
-    order: 0;
+    order: -2;
+    margin-top: 32px;
+    margin-bottom: 25px;
   }
 
   .form__recall {
     order: 0;
+    margin: 0;
+    margin-bottom: 39px;
   }
 
   .form__app {
-    order: 0;
+    margin-bottom: 42px;
   }
+
 
   .form__information-input, .form__info-input {
     width: 280px;
   }
-
-
 
   .form__footer {
     flex-direction: column;
@@ -349,10 +351,12 @@
   .form__recall--wrapper {
     display: block;
     padding: 0;
+    margin: 0;
+    padding-top: 15px;
   }
 
   .form__crazy-title, .form__recall-title, .form__app-title {
-  padding-top: 30px;
+  padding-top: 38px;
   line-height: $font-size;
 }
 
@@ -363,11 +367,24 @@
 }
 
   .form__info-label {
-    padding-left: 20px;
+    padding-left: 23px;
 }
+
+  .form__p {
+    margin-top: 34px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: $tablet-widths) {
+
+  .form__wrapper {
+    &--position {
+    order: -2;
+    margin-top: -12px;
+    }
+  }
+
   .form__information-content {
     position: relative;
     display: flex;
@@ -377,18 +394,48 @@
         content: "";
         position: absolute;
         right: 1px;
-        top: 1px;
+        top: 3px;
         width: 60px;
         height: 60px;
         background: $gray-input url(../img/icon-phone.svg) no-repeat 50% 50%;
     }
   }
 
+
   .form__information-content:last-child::before {
     background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
-//    top: 2px;
+  }
+
+  .form__selection-input {
+    &+.form__selection-label {
+      padding-top: 43px;
+      padding-bottom: 0;
   }
 }
+
+    .form__crazy-wrapper, .form__app-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0 59px;
+      padding-bottom: 56px;
+      box-sizing: border-box;
+  }
+
+    .form__crazy-wrapper {
+      padding-bottom: 44px;
+  }
+
+  .form__crazy-input {
+  &+.form__crazy-label {
+    padding-left: 60px;
+    }
+  }
+
+  .form__information-label{
+    padding-left: 20px;
+  }
+}
+
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .form__information-input {
@@ -397,11 +444,26 @@
     order: 0;
   }
 
-.form__info-input {
-  width: 521px;
-  margin-bottom: 0;
-  &--longer {
-    width: 561px;
+  .form__info-input {
+    width: 525px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    &--longer {
+      width: 565px;
+    }
+  }
+
+  .form__app-input {
+  &+.form__app-label {
+    padding-left: 60px;
+    padding-top: 44px;
+    padding-bottom: 1px;
+  }
+}
+
+  .form__wrapper {
+  &--position {
+    margin-top: 25px;
   }
 }
 
@@ -421,7 +483,7 @@
   }
 
   .form__textarea{
-    width: 496px;
+    width: 500px;
     height: 190px;
   }
 
@@ -437,25 +499,16 @@
   .form__information-title {
     margin-bottom: 30px;
   }
-}
 
-@media (min-width: 660px) {
-.form__selection-input {
-  &+.form__selection-label {
-    padding-top: 43px;
-    padding-bottom: 0;
+  .form__information-input {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
 }
 }
 
-    .form__crazy-wrapper, .form__app-wrapper {
-      display: flex;
-      flex-direction: column;
-      padding: 0 59px;
-      padding-bottom: 48px;
-      box-sizing: border-box;
 
-  }
-}
+
 
 @media (min-width: $desktop-widths) {
   .form {
@@ -470,12 +523,24 @@
   }
 
   .form__app {
-    width: 434px;
+    width: 432px;
+  }
+
+  .form__app-wrapper {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 4px;
+  }
+
+  .form__app-input + .form__app-label::before {
+    top: 36px;
+    left: 11px;
   }
 
   .form__information, .form__crazy, .form__recall, .form__footer  {
-    width: 940px;
+    width: 938px;
   }
+
 
   .form__info-wrapper {
     display: flex;
@@ -484,8 +549,12 @@
     height: 310px;
   }
 
+  .form__information {
+    margin-top: 16px;
+  }
 
-    .form__information-input {
+  .form__information-input {
+    margin-bottom: 10px;
     width: 375px;
     padding-right: 60px;
     order: 0;
@@ -493,12 +562,17 @@
 
 
   .form__information-title {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+  }
+
+  .form__information-content::before {
+    top: 6px;
   }
 
 .form__info-input {
-  width: 340px;
-  margin-bottom: 0;
+  width: 341px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 
   &--longer {
     width: 380px;
@@ -512,25 +586,41 @@
     margin: auto;
   }
 
+  .form__crazy-input {
+  &+.form__crazy-label {
+    padding-left: 60px;
+    width: 200px;
+    padding-right: 54px;
+    }
+  }
+
+  .form__crazy-input:last-child {
+  &+.form__crazy-label:last-child {
+    padding-right: 0px;
+    }
+  }
+
   .form__information-content {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 27px;
-//    &::before {
-//      top: 2px;
-//    }
+    margin-bottom: 13px;
   }
 
   .form__textarea {
     width: 820px;
+    height: 116px;
   }
 
   .form__crazy-wrapper {
     flex-wrap: wrap;
-    height: 232px;
-    padding: 0 59px;
-    padding-bottom: 60px;
+    align-items: flex-start;
+    height: 217px;
+    padding-left: 59px;
 }
+
+  .form__recall {
+    margin-bottom: 56px;
+  }
 
   .form__p {
     .visually-hidden {
