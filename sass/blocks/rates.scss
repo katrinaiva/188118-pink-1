@@ -38,12 +38,12 @@
   background-color: $color-link;
   border: 2px solid $gray-input;
   &--yes {
-    background-image: url(/img/icon-yes.svg);
+    background-image: url(../img/icon-yes.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
   &--no {
-    background-image: url(/img/icon-no.svg);
+    background-image: url(../img/icon-no.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
