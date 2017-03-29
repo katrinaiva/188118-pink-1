@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-widths) {
   .study {
-    @include container();
+//    @include container();
     p {
       margin-top: 11px;
       margin-bottom: 10px;
@@ -19,6 +19,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin: 0 20px;
     }
   }
   .study__wrapper {
@@ -74,6 +75,7 @@
 
 @media (min-width: $desktop-widths) {
   .study {
+    @include container();
     background: $gray-light;
     p {
       font-size: 18px;
