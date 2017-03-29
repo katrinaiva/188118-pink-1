@@ -1,7 +1,6 @@
 .forms {
   display: flex;
   flex-direction: column;
-//  @include container();
 }
 
 .forms__text {
@@ -24,8 +23,9 @@
   .forms__text {
     width: 280px;
     font-size: 14px;
-    padding: 40px 0;
     margin-bottom: 0;
+    padding-top: 46px;
+    padding-bottom: 34px;
 
     .visually-hidden {
     display: none;
@@ -34,6 +34,10 @@
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .forms {
+    margin-bottom: 41px;
+  }
+
   .forms__text {
     width: 505px;
   }
@@ -50,9 +54,9 @@
   padding: 0;
   padding-left: 45px;
   padding-right: 45px;
-  padding-top: 102px;
-  padding-bottom: 75px;
-  font-size: $font-size--big;
+  padding-top: 97px;
+  padding-bottom: 52px;
+  font-size: 24px;
   font-weight: 300;
   color: $color-link;
   text-align: center;
@@ -75,7 +79,8 @@
 }
 }
 
-@media (min-width: $tablet-widths){
+@media (min-width: $tablet-widths) {
+
   .forms__title {
     padding: 0 75px;
     padding-top: 183px;
@@ -100,7 +105,15 @@
 }
 
 @media (min-width: $desktop-widths) {
+
+  .forms__text {
+  margin-bottom: 75px;
+  padding-top: 93px;
+  }
+
   .forms__title {
+    padding-bottom: 102px;
+    padding-top: 173px;
     &--large {
       padding-top: 185px;
       padding-bottom: 145px;

@@ -1,3 +1,8 @@
+.page-footer {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
 .page-footer__title {
   margin-top: 43px;
   color: $color-main;
@@ -32,6 +37,17 @@
 //  text-align: center;
 //  font-size: 14px;
 //  line-height: 18px;
+}
+
+.page-footer__text {
+  padding-right: 14px;
+  vertical-align: middle;
+}
+
+@media (max-width: $tablet-widths){
+  .page-footer__copyright {
+    margin-top: 24px;
+  }
 }
 
 .page-footer__map {
@@ -71,6 +87,9 @@
     margin: 27px 0;
 }
 
+.inner .page-footer__wrapper {
+  margin: 41px 0;
+}
 
 .page-footer__logo-htmlacademy {
   vertical-align: middle;
@@ -119,6 +138,10 @@
     font: 14px;
     line-height: 18px;
   }
+
+  .inner .page-footer__wrapper {
+    margin: 26px 0;
+  }
 }
 
 @media (min-width: $tablet-widths) {
@@ -141,16 +164,15 @@
 }
 
   .page-footer__wrapper {
-//    margin: 37px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .page-footer__text {
-    padding-right: 14px;
-    vertical-align: middle;
-  }
+//  .page-footer__text {
+//    padding-right: 14px;
+//    vertical-align: middle;
+//  }
 
   .page-footer__fon {
     width: 660px;
@@ -159,6 +181,10 @@
 }
 
 @media (min-width: $desktop-widths) {
+//  .inner .page-footer {
+//    margin-top: 40px;
+//  }
+
   .page-footer__wrapper {
     margin: 75px 0;
   }
@@ -184,7 +210,6 @@
   }
 
   .page-footer__contact {
-//    margin-bottom: 30px;
     padding-top: 20px;
   }
 
@@ -192,10 +217,6 @@
     font-size: 18px;
     line-height: 18px;
   }
-
-//  .page-footer__logo {
-//    margin-top: -18px;
-//  }
 
   .page-footer__copyright {
     margin: 0;
@@ -214,10 +235,6 @@
     fill: $color-secondary;
   }
 
-//  .test:active path {
-//    fill: $color-main;
-//  }
-
   .page-footer__logo-desktop:active path {
       opacity: 0.3;
   }
@@ -226,4 +243,9 @@
     width: 960px;
     height: 100px;
   }
+
+  .inner .page-footer__wrapper {
+  margin: 65px 0;
+}
+
 }

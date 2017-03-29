@@ -1,5 +1,4 @@
 .loading-photo {
-  outline: 2px solid red;
   background-color: $gray-light;
   border-top: 1px solid $gray-light;
 }
@@ -9,10 +8,10 @@
 }
 
 .loading-photo__lists {
-  margin: 30px 0;
+  margin: 31px auto;
   display: flex;
   justify-content: space-around;
-//  text-align: center;
+  width: 224px;
 }
 
 .loading-photo__list {
@@ -46,6 +45,7 @@
 //    }
 //  }
 
+
 .loading-photo__controls {
   position: relative;
   &--hidden {
@@ -63,7 +63,7 @@
 
 .loading-photo__toggle {
   position: absolute;
-  right: 75px;
+  right: 56px;
   bottom: -6px;
   height: 10px;
   width: 10px;
@@ -85,6 +85,7 @@
   font-weight: bold;
   background-color: $gray-light;
   outline: none;
+
 
   &-submit {
     border: 3px solid $color-secondary;
@@ -135,8 +136,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 58px;
-    padding-bottom: 55px;
+    padding-top: 54px;
+    padding-bottom: 44px;
   }
 
   .loading-photo-wrapper {
@@ -157,6 +158,7 @@
     padding: 15px 0;
   }
 
+
   .loading-photo__result {
     margin: 0;
     img {
@@ -175,9 +177,9 @@
   .loading-photo__scale {
     width: 202px;
     margin-top: 34px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     margin-right: 18px;
-    margin-left: 55px;
+//    margin-left: 55px;
   }
 
   .loading-photo__toggle {
@@ -191,7 +193,9 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 170px;
+    margin-top: 10px;
   }
 
   .loading-photo__filter {
@@ -203,7 +207,6 @@
   .loading-photo__btns {
     margin-top: auto;
     padding: 0;
-    padding-left: 28px;
   }
 }
 
@@ -218,7 +221,7 @@
   }
 
   .loading-photo__controls:nth-child(2) .loading-photo__toggle {
-  left: 78px;
+  left: 26px;
 }
 
   .loading-photo__controls:nth-child(3) .loading-photo__toggle {
@@ -227,7 +230,13 @@
 
   .loading-photo__btn {
     width: 260px;
+    margin-top: 18px;
   }
+
+  .loading-photo__btns {
+    padding-left: 28px;
+  }
+
 }
 
 @media (min-width: $desktop-widths) {
@@ -259,5 +268,15 @@
 
   .loading-photo__btn {
     width: 183px;
+  }
+
+  .loading-photo__lists {
+    height: 186px;
+    margin-top: -2px;
+    margin-right: -47px;
+  }
+
+  .loading-photo__btn-submit {
+    margin-right: 40px;
   }
 }

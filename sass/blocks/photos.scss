@@ -7,12 +7,10 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-//  margin-bottom: 30px;
 }
 
 .photos__wrap{
   @include container();
-//  outline: 2px solid red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,45 +19,76 @@
 
 .photos__text {
   @include reset;
-  padding: 45px 35px;
-  padding-top: 25px;
+  padding: 47px 35px;
   font-size: 14px;
   line-height: 30px;
   color: $color-main;
   text-align: center;
+  &--down {
+    padding-top: 22px;
+    padding-bottom: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
 }
 
 .photos__content-wpap {
   @include container();
 }
 
+.photos__content:first-child {
+  padding-left: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 17px;
+}
+
 .photos__content {
-  margin-top: -10px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-left: 19px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 40px;
+  padding-left: 17px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  padding-right: 17px;
   background: $gray-light;
 }
 
+
 .photos--like-wrapper {
   i {
-    padding: 6px 7px;
+    margin-top: 12px;
+    padding: 8px 7px;
     background: url(/img/icon-heart.svg) no-repeat;
   }
   display: flex;
   align-items:  center;
+  margin-top: 12px;
   color: $color-secondary;
 }
 
 .photos__auhor-foto {
   margin: 0 auto;
-//  &--big {
-//    width: 320px;
-//  }
+  height: 180px;
+  &--big {
+    position: relative;
+    height: 137px;
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 140px;
+      padding: 6px 0px;
+      background-color: #d22856;
+      color: $color-link;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
 }
 
 .photos__img {
@@ -69,12 +98,12 @@
   padding-right: 20px;
   &--big {
     width: 320px;
+    height: 137px;
     padding: 0;
   }
-
 }
+
 .photos__auhor-name {
-  margin-right: 10px;
   font-size: $font-size--small;
   line-height: $font-size--big;
   font-weight: bold;
@@ -90,40 +119,62 @@
 
 .photos__list {
   @include reset;
-//    &--big {
-//    width: ;
-//  }
   p {
     @include reset;
-    margin-bottom: 10px;
     font-size: $font-size--small;
     line-height: $font-size--big;
   }
 }
 
+.photos__list .photos-comment {
+  @include reset;
+  margin-top: -3px;
+  &--top {
+    margin-top: 0px;
+  }
+}
+
 .photos__like, photos__like-count {
+  margin-top: 11px;
   padding-left: 18px;
   font-size: 12px;
   line-height: 24px;
   text-transform: $text-transform;
 }
 
+.photos__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 98px;
+  padding-bottom: 80px;
+  font-size: $font-size--big;
+  font-weight: 300;
+  color: $color-link;
+  text-align: center;
+}
+
+.photos__title-wrapper {
+  position: relative;
+}
+
 @media (min-width: $tablet-widths) {
+
   .photos__text {
     font-size: 18px;
     line-height: 30px;
   }
 
-  .photos__list{
+  .photos__list {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin-bottom: 20px;
     &--big {
     width: auto;
+    }
   }
-  }
-
 
   .photos__wrapper {
     margin-bottom: 30px;
@@ -137,8 +188,8 @@
     margin-top: -10px;
     flex-grow: 1;
     width: auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-top: 24px;
     padding-left: 28px;
     padding-right: 28px;
     &--top {
@@ -148,7 +199,10 @@
 
   .photos__like--top {
     margin-right: 16px;
+    margin-top: -1px;
+    margin-bottom: 12px;
   }
+
   .photos--like-wrapper {
     flex-direction: row-reverse;
     flex-grow: 1;
@@ -160,6 +214,13 @@
       justify-content: flex-start;
       order: -1;
     }
+    i {
+      padding: 7px 9px;
+    }
+  }
+
+  .photos__auhor-name {
+    margin-right: 3px;
   }
 
   .photos__img {
@@ -169,13 +230,15 @@
     padding-right: 0;
     &--big {
       width: 660px;
+      height: 508px;
     }
   }
 
   .photos__like, photos__like-count {
-  padding-left: 0;
+    padding-left: 0;
+    margin-right: 13px;
 }
-  .photos--name{
+  .photos__name{
     order: -2;
   }
 
@@ -189,59 +252,51 @@
   .photos__text {
     padding-top: 94px;
     padding-bottom: 75px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 100px;
+    padding-right: 100px;
     &--down {
       padding-top: 48px;
       padding-bottom: 66px;
     }
   }
-}
 
-@media (min-width: $desktop-widths) {
-  .photos {
-    width: 960px;
-  }
-
-  .photos__img {
-    width: 300px;
-    height: 400px;
+  .photos__auhor-foto {
+    height: 310px;
     &--big {
-      width: 960px;
+      height: 508px;
+      &::before {
+        top: 58px;
+      }
     }
   }
 
+  .photos__content-wpap {
+    padding-top: 10px;
+}
 
-  .photos__text {
-    padding-top: 94px;
-    padding-bottom: 86px;
-    padding-left: 170px;
-    padding-right: 170px;
-    &--down {
-      padding-left: 250px;
-      padding-right: 250px;
-      padding-top: 42px;
-      padding-bottom: 64px;
-    }
+  .photos__content:first-child {
+    padding-left: 26px;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    padding-right: 29px;
+}
+
+  .photos__list .photos-comment {
+//  @include reset;
+  margin-top: 2px;
+  &--top {
+    margin-top: -11px;
+  }
+}
+  .photos--like-wrapper--top i{
+    margin-top: -11px;
+  }
+
+  .photos__list:nth-last-of-type(2) .photos--like-wrapper {
+    margin-top: 25px;
   }
 }
 
-.photos__title {
-  margin: 0;
-  padding: 0;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 102px;
-  padding-bottom: 75px;
-  font-size: $font-size--big;
-  font-weight: 300;
-  color: $color-link;
-  text-align: center;
-}
-
-.photos__title-wrapper {
-  position: relative;
-}
 
 @media (max-width: $tablet-widths) {
   .photos__title-wrapper {
@@ -259,12 +314,12 @@
 @media (min-width: $tablet-widths){
   .photos__title {
     padding: 0 75px;
-    padding-top: 190px;
+    padding-top: 181px;
     padding-bottom: 78px;
     font-size: 50px;
     line-height: 60px;
     &--large {
-      padding-bottom: 145px;
+      padding-bottom: 140px;
     }
   }
 
@@ -283,15 +338,15 @@
 @media (min-width: $desktop-widths) {
   .photos__title {
     &--large {
-      padding-top: 185px;
-      padding-bottom: 145px;
+      padding-top: 174px;
+      padding-bottom: 101px;
       padding-left: 290px;
       padding-right: 290px;
     }
   }
 
   .photos__title-wrapper {
-    background: url(../img/bg-back-desktop@1x.jpg) 50% 0 no-repeat;
+    background: $color-main url(../img/bg-back-desktop@1x.jpg) 50% 0 no-repeat;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -299,6 +354,82 @@
       background-image: url(../img/bg-back-desktop@2x.jpg);
       background-size: auto 856px;
       }
+  }
+
+  .photos {
+    width: 960px;
+  }
+
+  .photos__auhor-foto {
+    height: 410px;
+    &--big {
+      height: 516px;
+      &::before {
+        top: 53px;
+        right: 10px;
+      }
+    }
+  }
+
+  .photos__img {
+    width: 300px;
+    height: 400px;
+    &--big {
+      width: 960px;
+      height: 506px;
+    }
+  }
+
+  .photos__text {
+    padding-top: 94px;
+    padding-bottom: 86px;
+    padding-left: 170px;
+    padding-right: 170px;
+    &--down {
+      padding-left: 263px;
+      padding-right: 229px;
+      padding-top: 3px;
+      padding-bottom: 65px;
+    }
+  }
+
+  .photos__list .photos-comment {
+    margin-top: 3px;
+    &--top {
+      margin-top: -9px;
     }
 
+  }
+
+  .photos__content:first-child {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .photos--like-wrapper {
+    i {
+    margin-top: 14px;
+  }
+    &--top i {
+      margin-top: -10px;
+    }
+  }
+
+  .photos__wrap .photos__list {
+    margin-bottom: 55px;
+  }
+
+  .photos__list:nth-last-of-type(2) .photos--like-wrapper {
+    margin-top: 25px;
+  }
+
+  .photos__list:nth-last-of-type(3) .photos--like-wrapper {
+    margin-top: 25px;
+  }
+
+  .photos__wrap .photos__list:nth-last-of-type(1) .photos--like-wrapper {
+    margin-top: 25px;
+  }
 }

@@ -5,7 +5,6 @@
 }
 
 .main-menu__top {
-//  position: relative;
   padding: 20px;
   padding-bottom: 25px;
   line-height: 0;
@@ -135,7 +134,6 @@
 .main-menu__lists {
   @include reset;
   list-style: none;
-  border-top: 1px solid #000000;
   }
 
 .main-menu__list {
@@ -157,14 +155,15 @@
     }
 
     &:active {
-//    color: $color-link;
       opacity: 0.3;
     }
   }
 }
 
 @media (max-width: $tablet-widths) {
-
+  .main-menu__lists {
+  border-top: 1px solid #000000;
+  }
 
   .main-menu__logo-tablet{
     display: none;
