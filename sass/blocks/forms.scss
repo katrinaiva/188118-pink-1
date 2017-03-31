@@ -14,6 +14,7 @@
   text-align: center;
 
   .visually-hidden {
+    vertical-align: top;
     display: inline-block;
     padding-top: 0;
   }
@@ -26,9 +27,8 @@
     margin-bottom: 0;
     padding-top: 46px;
     padding-bottom: 34px;
-
     .visually-hidden {
-    display: none;
+      display: none;
     }
   }
 }
@@ -68,19 +68,20 @@
 
 @media (max-width: $tablet-widths) {
   .forms__title-wrapper {
-    background: $color-main url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
-  }
+    background-color: $color-main;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
   @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx){
-    .forms__title-wrapper {
       background-image: url(../img/bg-back-mobile@2x.jpg);
       background-size: auto 461px;
     }
-}
+  }
 }
 
 @media (min-width: $tablet-widths) {
-
   .forms__title {
     padding: 0 75px;
     padding-top: 183px;
@@ -92,12 +93,14 @@
     }
   }
 
-    .forms__title-wrapper  {
-    background: $color-main url(../img/bg-back-tablet@1x.jpg) 50% 0 no-repeat;
-  }
+    .forms__title-wrapper {
+      background-color: $color-main;
+      background-image: url(../img/bg-back-tablet@1x.jpg);
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+
     @media (min-resolution: 144dpi),
           (min-resolution: 1.5dppx){
-      .forms__title-wrapper  {
         background-image: url(../img/bg-back-tablet@2x.jpg);
         background-size: auto 729px;
     }
@@ -105,7 +108,6 @@
 }
 
 @media (min-width: $desktop-widths) {
-
   .forms__text {
   margin-bottom: 75px;
   padding-top: 93px;
@@ -123,13 +125,14 @@
   }
 
   .forms__title-wrapper {
-    background: $color-main url(../img/bg-back-desktop@1x.jpg) 50% 0 no-repeat;
-  }
+    background-color: $color-main;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .forms__title-wrapper {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../img/bg-back-desktop@2x.jpg);
       background-size: auto 856px;
       }
-    }
+  }
 }

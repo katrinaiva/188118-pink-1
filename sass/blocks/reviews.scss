@@ -49,7 +49,7 @@
 
   .reviews__auhor-age {
   display: none;
-}
+  }
 }
 
 @media (min-width: $tablet-widths) {
@@ -65,13 +65,13 @@
   padding-top: 90px;
   padding-left: 0;
   padding-right: 0;
-}
+  }
 
   .reviews__auhor-age {
     margin: 0;
     font-size: 14px;
     line-height: 30px;
-}
+  }
 
   .reviews__auhor-name {
     font-size: 20px;

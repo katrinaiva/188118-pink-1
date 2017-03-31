@@ -1,7 +1,6 @@
 .rates {
   padding-bottom: 48px;
   background-color: $gray-light;
-
 }
 
 .rates__fon {
@@ -17,7 +16,6 @@
   line-height: 30px;
   font-weight: bold;
   border: 2px solid #e5e5e5;
-
   span {
     font-size: 24px;
     line-height: 30px;
@@ -25,10 +23,7 @@
   }
 }
 
-
-
 .rates-table__field {
-//  width: 280px;
   padding: 15px;
   padding-left: 22px;
   color: $color-main;
@@ -75,17 +70,11 @@
     margin-top: 103px;
     width: 1112px;
     margin-left: -533px;
-//    overflow: hidden;
   }
 
   .rates__fon {
-    background: url(/img/bg-triangle-white.svg) no-repeat -730px 0;
+    background: url(../img/bg-triangle-white.svg) no-repeat -730px 0;
 }
-
-
-//  .rates-table--hidden {
-//    display: none;
-//  }
 
   .rates-table__field {
     &--yes {
@@ -116,7 +105,7 @@
 
   .rates__fon {
     padding-top: 50px;
-    background: url(/img/bg-triangle-white.svg) no-repeat -540px 0;
+    background: url(../img/bg-triangle-white.svg) no-repeat -540px 0;
   }
 
   .rates-table {
@@ -132,7 +121,6 @@
     padding-bottom: 8px;
     padding-left: 16px;
     vertical-align: middle;
-//    text-align: center;
   }
 
   .rates__toggles-wrapper {
@@ -165,7 +153,7 @@
 
   .rates__fon {
     padding-top: 50px;
-    background: url(/img/bg-triangle-white.svg) no-repeat -136px 0;
+    background: url(../img/bg-triangle-white.svg) no-repeat -136px 0;
   }
 
   .rates-table {
@@ -181,7 +169,6 @@
     padding-left: 24px;
     font-size: 18px;
     vertical-align: middle;
-//    text-align: center;
   }
 
   .rates__toggles-wrapper {

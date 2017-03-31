@@ -6,7 +6,6 @@
 
 @media (min-width: $tablet-widths) {
   .study {
-//    @include container();
     p {
       margin-top: 11px;
       margin-bottom: 10px;
@@ -62,6 +61,7 @@
     width: 175px;
     height: 175px;
     text-align: center;
+    vertical-align: top;
     background-color: $color-link;
     border: 13px solid $color-secondary;
     border-radius: 50%;
@@ -70,7 +70,6 @@
     color: $color-secondary;
     font-weight: bold;
   }
-
 }
 
 @media (min-width: $desktop-widths) {
@@ -89,7 +88,6 @@
       margin: 0;
       padding-top: 24px;
       padding-bottom: 31px;
-//      padding: 16px 0;
     }
   }
 
@@ -129,7 +127,6 @@
     border: 17px solid $color-secondary;
     font-size: 120px;
     line-height: 210px;
-
   }
 
   .study__hidden-des {

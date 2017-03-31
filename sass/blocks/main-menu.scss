@@ -130,7 +130,6 @@
     display: block;
   }
 
-
 .main-menu__lists {
   @include reset;
   list-style: none;
@@ -167,14 +166,14 @@
 
   .main-menu__logo-tablet{
     display: none;
-}
+  }
   .main-menu__logo-desktop {
     display: none;
   }
 
   .main-menu__logo-mobile:hover path {
     fill: $color-secondary;
-}
+  }
   .main-menu__logo-mobile:active path {
     fill: $color-link;
     opacity: 0.3;
@@ -185,7 +184,7 @@
   .main-menu {
     width: 660px;
     min-height: 50px;
-}
+  }
   .main-menu__logo-mobile{
     display: none;
   }
@@ -207,7 +206,7 @@
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 20px;
-}
+  }
   .main-menu__toggle {
     top: 46px;
     right: 20px;
@@ -277,31 +276,8 @@
 
       &:active {
         border-bottom-color: rgba(0, 0, 0, 0.3);
+      }
     }
-
-
-//    &::after {
-//      content: "";
-//      position: absolute;
-//      right: 80px;
-//      left: 80px;
-//      bottom: 0;
-//      height: 2px;
-//      background-color: $color-link;
-//    }
-//
-//    &:hover {
-//      &::after {
-//        background-color: $color-link--hover;
-//      }
-//    }
-//
-//    a {
-//      &:hover {
-//        color: $color-link--hover;
-//      }
-//    }
-  }
   }
 
   .main-menu__top {

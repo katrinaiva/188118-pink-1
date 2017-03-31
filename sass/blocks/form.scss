@@ -4,7 +4,6 @@
   @include container();
 }
 
-
 .form__fieldset {
   @include reset;
   margin-bottom: 27px;
@@ -151,6 +150,7 @@
     }
   }
 }
+
 .form__app-input {
   &+.form__app-label {
     position: relative;
@@ -223,8 +223,6 @@
   }
 }
 
-
-
 .form__app-input {
     &+.form__app-label {
       &:hover{
@@ -294,7 +292,6 @@
 }
 
 @media (max-width: $tablet-widths){
-
   .form__wrapper {
   background-color: $gray-light;
   border-top: 1px solid $gray-light;
@@ -358,7 +355,7 @@
   .form__crazy-title, .form__recall-title, .form__app-title {
   padding-top: 38px;
   line-height: $font-size;
-}
+  }
 
   .form__information-title {
     &--hidden{
@@ -368,16 +365,15 @@
 
   .form__info-label {
     padding-left: 23px;
-}
+  }
 
   .form__p {
     margin-top: 34px;
     margin-bottom: 15px;
   }
-}
+  }
 
 @media (min-width: $tablet-widths) {
-
   .form__wrapper {
     &--position {
     order: -2;
@@ -389,18 +385,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
       &::before {
         content: "";
         position: absolute;
         right: 1px;
-        top: 4px;
+        top: 3px;
         width: 60px;
         height: 60px;
         background: $gray-input url(../img/icon-phone.svg) no-repeat 50% 50%;
     }
   }
-
 
   .form__information-content:last-child::before {
     background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
@@ -436,8 +431,11 @@
   }
 }
 
-
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .form__app {
+    margin-top: 36px;
+  }
+
   .form__information-input {
     width: 500px;
     padding-right: 60px;
@@ -504,11 +502,8 @@
   margin-top: 2px;
   margin-bottom: 10px;
   padding: 15px 20px;
+  }
 }
-}
-
-
-
 
 @media (min-width: $desktop-widths) {
   .form {
@@ -541,7 +536,6 @@
     width: 938px;
   }
 
-
   .form__info-wrapper {
     display: flex;
     flex-direction: column;
@@ -560,13 +554,12 @@
     order: 0;
   }
 
-
   .form__information-title {
     margin-bottom: 24px;
   }
 
   .form__information-content::before {
-    top: 7px;
+    top: 6px;
   }
 
 .form__info-input {
@@ -616,7 +609,7 @@
     align-items: flex-start;
     height: 217px;
     padding-left: 59px;
-}
+  }
 
   .form__recall {
     margin-bottom: 56px;
