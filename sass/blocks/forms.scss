@@ -66,7 +66,7 @@
   position: relative;
 }
 
-@media (max-width: $tablet-widths) {
+@media (min-width: $mobile-widths) {
   .forms__title-wrapper {
     background-color: $color-main;
     background-image: url(../img/bg-back-mobile@1x.jpg);
@@ -103,8 +103,8 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (min-width: $tablet-widths),
-        (min-resolution: 1.5dppx) and (min-width: $tablet-widths) {
+@media (min-resolution: 144dpi) and (min-width: 661px),
+        (min-resolution: 1.5dppx) and (min-width: 661px) {
   .forms__title-wrapper {
     background-image: url(../img/bg-back-tablet@2x.jpg);
     background-size: auto 729px;
@@ -136,8 +136,8 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (min-width: $desktop-widths),
-      (min-resolution: 1.5dppx) and (min-width: $desktop-widths) {
+@media (min-resolution: 144dpi) and (min-width: 961px),
+      (min-resolution: 1.5dppx) and (min-width: 961px) {
   .forms__title-wrapper {
     background-image: url(../img/bg-back-desktop@2x.jpg);
     background-size: auto 856px;

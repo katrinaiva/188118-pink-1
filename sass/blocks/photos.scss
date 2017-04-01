@@ -243,7 +243,7 @@
   }
 }
 
-@media (max-width: $tablet-widths) {
+@media (min-width: $mobile-widths) {
   .photos__title-wrapper {
     background-color: $color-main;
     background-image: url(../img/bg-back-mobile@1x.jpg);
@@ -435,8 +435,8 @@
   }
 }
 
-@media (min-resolution: 144dpi) and (min-width: $desktop-widths),
-    (min-resolution: 1.5dppx) and (min-width: $desktop-widths) {
+@media (min-resolution: 144dpi) and (min-width: 961px),
+    (min-resolution: 1.5dppx) and (min-width: 961px) {
   .photos__title-wrapper {
     background-image: url(../img/bg-back-desktop@2x.jpg);
     background-size: auto 856px;
