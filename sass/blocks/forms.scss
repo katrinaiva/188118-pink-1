@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: $desktop-widths){
+@media (min-width: $desktop-widths) {
   .forms__text {
     width: 760px;
   }
@@ -72,12 +72,14 @@
     background-image: url(../img/bg-back-mobile@1x.jpg);
     background-position: 50% 0;
     background-repeat: no-repeat;
+  }
+}
 
-  @media (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx){
-      background-image: url(../img/bg-back-mobile@2x.jpg);
-      background-size: auto 461px;
-    }
+@media (min-resolution: 144dpi) and (max-width: $tablet-widths),
+      (min-resolution: 1.5dppx) and (max-width: $tablet-widths) {
+  .forms__title-wrapper {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: auto 461px;
   }
 }
 
@@ -98,19 +100,21 @@
       background-image: url(../img/bg-back-tablet@1x.jpg);
       background-position: 50% 0;
       background-repeat: no-repeat;
+  }
+}
 
-    @media (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx){
-        background-image: url(../img/bg-back-tablet@2x.jpg);
-        background-size: auto 729px;
-    }
+@media (min-resolution: 144dpi) and (min-width: $tablet-widths),
+        (min-resolution: 1.5dppx) and (min-width: $tablet-widths) {
+  .forms__title-wrapper {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
+    background-size: auto 729px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .forms__text {
-  margin-bottom: 75px;
-  padding-top: 93px;
+    margin-bottom: 75px;
+    padding-top: 93px;
   }
 
   .forms__title {
@@ -129,10 +133,13 @@
     background-image: url(../img/bg-back-desktop@1x.jpg);
     background-position: 50% 0;
     background-repeat: no-repeat;
+  }
+}
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url(../img/bg-back-desktop@2x.jpg);
-      background-size: auto 856px;
-      }
+@media (min-resolution: 144dpi) and (min-width: $desktop-widths),
+      (min-resolution: 1.5dppx) and (min-width: $desktop-widths) {
+  .forms__title-wrapper {
+    background-image: url(../img/bg-back-desktop@2x.jpg);
+    background-size: auto 856px;
   }
 }

@@ -532,7 +532,7 @@
     left: 11px;
   }
 
-  .form__information, .form__crazy, .form__recall, .form__footer  {
+  .form__information, .form__crazy, .form__recall, .form__footer {
     width: 938px;
   }
 
@@ -617,7 +617,8 @@
 
   .form__p {
     .visually-hidden {
-    display: inline-block;
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }
